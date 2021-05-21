@@ -5,7 +5,7 @@ export default [
     activity: 'Hike',
     season: 'Summer',
     name: 'Mount Snowdon Hike',
-    image: 'fake url',
+    image_url: 'fake url',
     description: 'Mount Snowdon Via Miner\'s Track is a 8.1 mile out and back trail located near Llanberis, Gwynedd, Wales that features a lake and is rated as difficult. The trail is primarily used for hiking, camping, nature trips, and backpacking and is accessible year-round.',    
   },
   { 
