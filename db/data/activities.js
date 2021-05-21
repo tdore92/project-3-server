@@ -15,7 +15,7 @@ export default [
     season: 'Winter',
     name: 'Grands Montets, Chamonix',
     description: 'The most iconic ski area for advanced skiers and riders has to be the Grands Montets sector. Here you can revel in a vast freeride heaven and tackle the 2,000m descent down to the valley when you’re done. Skiing the famous Vallée Blanche from the top of the Aiguille du Midi cable car with a qualified guide is also a must for anybody looking to test their skills.'
-  }
+  },
   {
     number: 3,
     country: 'Switzerland',
@@ -31,7 +31,7 @@ export default [
     season: 'Winter',
     name: 'Saint Gotthard Pass',
     description: 'A route in use since the 13th century, it is one of the main roads through the Alps with the Mont Blanc tunnel to the west and the Brenner Pass further to the east.'
-  }
+  },
   {
     number: 5,
     country: 'Italy',
