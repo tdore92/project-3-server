@@ -19,7 +19,6 @@ router.route('/activities/:id')
   .delete(secureRoute, activityController.remove)
   .put(secureRoute, activityController.update)
 
-
 router.route('/activities/:id/comment')
   .post(secureRoute, commentController.create)
 

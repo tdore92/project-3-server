@@ -10,7 +10,7 @@ GET http://localhost:4000/api/activities/search?season=Summer
 ###
 
 POST http://localhost:4000/api/activities
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWYwYWM4NjU0YTM1NWY3YWExNzUiLCJpYXQiOjE2MjE4NzEyMjMsImV4cCI6MTYyMTkxNDQyM30.LQ5vQmCUzoWlv9bH_BjUJIlbJ2aAKCvPiIw6BkkLFF0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
 content-type: application/json
 
 {
@@ -24,12 +24,13 @@ content-type: application/json
 }
 
 ### 
-PUT http://localhost:4000/api/activities/60ab852620a9511f057a8515
+PUT http://localhost:4000/api/activities/60abcb461dc858f0811590a7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
 content-type: application/json
 
 {
-  "number": 1,
-    "country": "fake country",
+  "number": 6,
+    "country": "fake country 2",
     "activity": "fake activity",
     "season": "fake season",
     "name": "fake name",
@@ -39,8 +40,8 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:4000/api/activities/60ab91ff66f4f02a4012042a
-
+DELETE http://localhost:4000/api/activities/60abcb461dc858f0811590a7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
 ###
 
 //USERS
@@ -49,10 +50,10 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-  "username": "Jack" ,
-  "password": "jackpass",
-  "passwordConfirmation": "jackpass",
-  "email": "jack@email"
+  "username": "random" ,
+  "password": "randompass",
+  "passwordConfirmation": "randompass",
+  "email": "random@email"
 }
 
 ###
@@ -61,7 +62,26 @@ POST http://localhost:4000/api/login
 content-type: application/json 
 
 {
-  "password": "jackpass",
-  "email": "jack@email"
+  "password": "randompass",
+  "email": "random@email"
 }
 
+###
+
+POST http://localhost:4000/api/activities/60abcd02fb0d4ff116673509/comment
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2QxN2ViZjYxY2YxMmNiZDEwZTkiLCJpYXQiOjE2MjE4NzE4OTcsImV4cCI6MTYyMTkxNTA5N30.lWLwN2Y7NonuYBBbOAkVPo4kzGNMKbvP8iqjx6bjIxQ
+
+{
+  "text": "Comment number 2."
+}
+
+###
+
+PUT http://localhost:4000/api/activities/60abcd02fb0d4ff116673509/comment/60abcdbbebf61cf12cbd10eb
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2QxN2ViZjYxY2YxMmNiZDEwZTkiLCJpYXQiOjE2MjE4NzE4OTcsImV4cCI6MTYyMTkxNTA5N30.lWLwN2Y7NonuYBBbOAkVPo4kzGNMKbvP8iqjx6bjIxQ
+
+{
+  "text": "Second edit comment number 3."
+}
