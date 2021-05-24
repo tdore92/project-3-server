@@ -1,12 +1,17 @@
 GET http://localhost:4000/api/activities
 
 ###
-GET http://localhost:4000/api/activities/60ab852620a9511f057a8515
+GET http://localhost:4000/api/activities/60ab8414cdda4cd0345fb75c
+
+###
+
+GET http://localhost:4000/api/activities/search?season=Summer
 
 ###
 
 POST http://localhost:4000/api/activities
 content-type: application/json
+Authorization: Bearer 
 
 {
   "number": 6,
@@ -17,9 +22,6 @@ content-type: application/json
     "image_url": "fake url",
     "description": "a test place"
 }
-
-### 
-DELETE http://localhost:4000/api/activities/60ab8a5c48183e206016b019
 
 ### 
 PUT http://localhost:4000/api/activities/60ab852620a9511f057a8515
