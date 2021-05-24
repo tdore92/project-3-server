@@ -1,6 +1,7 @@
 GET http://localhost:4000/api/activities
 
 ###
+
 GET http://localhost:4000/api/activities/1
 
 ###
@@ -10,9 +11,20 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:4000/api/activities/
+PUT http://localhost:4000/api/activities/
+content-type: application/json
+
+{
+  "number": 5,
+    "country": "fake country",
+    "activity": "fake activity",
+    "season": "fake season",
+    "name": "fake name",
+    "image_url": "fake url",
+    "description": "a test place"
+}
 
 ###
 
-PUT http://localhost:4000/api/activities/
-content-type: application/json
+DELETE http://localhost:4000/api/activities/2
+
