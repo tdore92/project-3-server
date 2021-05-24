@@ -50,10 +50,10 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-  "username": "random" ,
-  "password": "randompass",
-  "passwordConfirmation": "randompass",
-  "email": "random@email"
+  "username": "random1" ,
+  "password": "randompass1",
+  "passwordConfirmation": "randompass1",
+  "email": "random@email1"
 }
 
 ###
