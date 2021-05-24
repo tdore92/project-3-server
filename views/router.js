@@ -8,7 +8,7 @@ router.route('/activities')
   .get(activityController.index)
   .post(activityController.create)
 
-router.route('/activity/:id')
+router.route('/activities/:id')
   .get(activityController.show)
   .delete(() => console.log('TODO: remove'))
   .put(() => console.log('TODO: update'))

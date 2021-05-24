@@ -1,33 +1,58 @@
-import activityData from '../db/data/activities.js'
+import Activities from '../models/activities.js'
 
+import { NotFound } from '../lib/errors.js'
 
 //request activities index
-function index(req, res) {
-  res.status(200).json(activityData)
+async function index(req, res) {
+  const activitiesList = await Activities.find().lean()
+
+  res.status(200).json(activitiesList)
 }
 
 //request single activity
-function show(req, res) {
-  const id = Number(req.params.id)
+async function show(req, res, next) {
+  try {
+    const id = req.params.id
+    const activities = await Activities.findById(id)
 
-  const activity = activityData.find((activity) => {
-    return activity.number === id
-  })
-
-  res.status(200).json(activity)
+    if (!activities) {
+      throw new NotFound('No activity found !')
+    }
+    
+    res.status(200).json(activities)
+  } catch (err) {
+    next(err)
+  }
 }
 
 // create a new activity
-function create(req, res) {
-  const newActivity = req.body
+async function create(req, res) {
+  const newActivity = await Activities.create(req.body)
 
-  activityData.push(newActivity)
+  res.status(201).json(newActivity)
+}
 
-  res.status(201). json(newActivity)
+//remove an activity
+async function remove(req, res) {
+  await Activities.findByIdAndRemove(req.params.id)
+
+  res.sendStatus(204)
+}
+
+// update an activity
+async function update(req, res) {
+  const id = req.params.id
+  const body = req.body
+
+  const updatedActivity = await Activities.findOneAndUpdate({ _id: id }, body, { new: true })
+
+  res.status(202).json(updatedActivity)
 }
 
 export default {
   index,
   show,
   create,
+  remove,
+  update,
 }
