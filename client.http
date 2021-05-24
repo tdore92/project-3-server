@@ -49,17 +49,10 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-<<<<<<< HEAD
   "username": "Theo1" ,
   "password": "theopass",
   "email": "theo1@email",
   "passwordConfirmation": "theopass"
-=======
-  "username": "random1" ,
-  "password": "randompass1",
-  "passwordConfirmation": "randompass1",
-  "email": "random@email1"
->>>>>>> development
 }
 
 ###
@@ -68,12 +61,7 @@ POST http://localhost:4000/api/login
 content-type: application/json 
 
 {
-<<<<<<< HEAD
   "password": "theopass",
   "email": "theo1@email"
-=======
-  "password": "randompass1",
-  "email": "random@email1"
->>>>>>> development
 }
 
