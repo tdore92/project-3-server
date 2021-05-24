@@ -10,6 +10,10 @@ export default function errorHandler(err, req, res, next) {
     return res.status(404).json({ message: 'Not Found' })
   }
 
+  if (err.name === 'NotValid') {
+    return res.status(400).json({ message: 'There was a problem.' })
+  }
+
   if (err.name === 'ValidationError') {
     const errors = {}
 

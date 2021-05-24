@@ -2,11 +2,16 @@ import express from 'express'
 import activityController from '../controllers/activities.js'
 import userController from '../controllers/user.js'
 
+import secureRoute from '../middleware/secureRoute.js'
+
 const router = express.Router()
 
 router.route('/activities')
   .get(activityController.index)
-  .post(activityController.create)
+  .post(secureRoute, activityController.create)
+
+router.route('/activities/search')
+  .get(activityController.search)
 
 router.route('/activities/:id')
   .get(activityController.show)
