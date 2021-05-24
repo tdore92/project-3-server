@@ -1,8 +1,7 @@
 GET http://localhost:4000/api/activities
 
 ###
-
-GET http://localhost:4000/api/activities/60ab91b746b9352a2ebafe7b
+GET http://localhost:4000/api/activities/60ab852620a9511f057a8515
 
 ###
 
@@ -19,13 +18,15 @@ content-type: application/json
     "description": "a test place"
 }
 
-###
+### 
+DELETE http://localhost:4000/api/activities/60ab8a5c48183e206016b019
 
-PUT http://localhost:4000/api/activities/
+### 
+PUT http://localhost:4000/api/activities/60ab852620a9511f057a8515
 content-type: application/json
 
 {
-  "number": 6,
+  "number": 1,
     "country": "fake country",
     "activity": "fake activity",
     "season": "fake season",

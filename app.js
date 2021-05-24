@@ -1,8 +1,8 @@
 import express from 'express'
 import router from './views/router.js'
 
-import logger from './middleware/logger.js'
-import errorHandler from './middleware/errorHandler.js'
+import logger from './middleware/errorHandler.js'
+import errorHandler from './middleware/logger.js'
 
 const app = express()
 
