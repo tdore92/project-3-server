@@ -29,6 +29,7 @@ async function seedDatabase() {
 
     await mongoose.connection.close()
     console.log('Disconnected from mongo. All done !')
+    
   } catch (err) {
     console.log('Something went wrong :(')
     await mongoose.connection.close()

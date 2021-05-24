@@ -5,7 +5,6 @@ import userController from '../controllers/user.js'
 const router = express.Router()
 
 router.route('/activities')
-
   .get(activityController.index)
   .post(activityController.create)
 
