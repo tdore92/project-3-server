@@ -21,12 +21,12 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:4000/api/activities/
+PUT http://localhost:4000/api/activities/60ab8a499e254ad5faba2673
 content-type: application/json
 
 {
   "number": 6,
-    "country": "fake country",
+    "country": "fake country 2",
     "activity": "fake activity",
     "season": "fake season",
     "name": "fake name",
@@ -36,5 +36,5 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:4000/api/activities/2
+DELETE http://localhost:4000/api/activities/60ab8a499e254ad5faba2673
 

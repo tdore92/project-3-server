@@ -9,7 +9,7 @@ router.route('/activities')
 
 router.route('/activities/:id')
   .get(activityController.show)
-  .delete(() => console.log('TODO: remove'))
-  .put(() => console.log('TODO: update'))
+  .delete(activityController.remove)
+  .put(activityController.update)
 
 export default router
