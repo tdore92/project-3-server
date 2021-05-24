@@ -27,6 +27,17 @@ async function seedDatabase() {
     const activities = await Activities.create(activitiesDataWithUsers)
     console.log(`${activities.length} activities created !`)
 
+    const myComment = {
+      text: 'This is my first comment',
+      user: users[0]._id,
+    }
+
+    const activityToCommentOn = activities[0]
+    activityToCommentOn.comments.push(myComment)
+
+    const savedActivity = await activityToCommentOn.save()
+    console.log(savedActivity)
+
     await mongoose.connection.close()
     console.log('Disconnected from mongo. All done !')
     
