@@ -1,7 +1,7 @@
 GET http://localhost:4000/api/activities
 
 ###
-GET http://localhost:4000/api/activities/60ab8414cdda4cd0345fb75c
+GET http://localhost:4000/api/activities/
 
 ###
 
@@ -10,8 +10,8 @@ GET http://localhost:4000/api/activities/search?season=Summer
 ###
 
 POST http://localhost:4000/api/activities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYWYwYWM4NjU0YTM1NWY3YWExNzUiLCJpYXQiOjE2MjE4NzEyMjMsImV4cCI6MTYyMTkxNDQyM30.LQ5vQmCUzoWlv9bH_BjUJIlbJ2aAKCvPiIw6BkkLFF0
 content-type: application/json
-Authorization: Bearer 
 
 {
   "number": 6,
