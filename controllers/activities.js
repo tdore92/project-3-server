@@ -6,6 +6,7 @@ import { NotFound } from '../lib/errors.js'
 async function index(req, res, next) {
   try {
     const activitiesList = await Activities.find().populate('user')
+    
     res.status(200).json(activitiesList)
   } catch (e) {
     next(e)
@@ -16,7 +17,9 @@ async function search(req, res, next) {
   try {
     const searchParams = req.query
     console.log(searchParams)
-    const activitiesList = await Activities.find(searchParams)
+
+    const activitiesList = await Activities.find(searchParams).populate('user')
+
     res.status(200).json(activitiesList)
   } catch (e) {
     next(e)
@@ -47,7 +50,7 @@ async function create(req, res, next) {
     const newActivity = await Activities.create(req.body)
 
     res.status(201).json(newActivity)
-  } catch (e){
+  } catch (e) {
     next(e)
   }
 }
@@ -59,7 +62,7 @@ async function remove(req, res, next) {
     const activity = await Activities.findById(req.params.id)
 
     if (!activity) {
-      throw new NotFound('No acrtivity found.')
+      throw new NotFound('No activity found.')
     }
 
     if (!currentUserId.equals(activity.user)) {
