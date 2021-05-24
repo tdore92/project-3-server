@@ -2,7 +2,7 @@ GET http://localhost:4000/api/activities
 
 ###
 
-GET http://localhost:4000/api/activities/60ab8414cdda4cd0345fb75c
+GET http://localhost:4000/api/activities/60ab91b746b9352a2ebafe7b
 
 ###
 
@@ -36,5 +36,28 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:4000/api/activities/2
+DELETE http://localhost:4000/api/activities/60ab91ff66f4f02a4012042a
+
+###
+
+//USERS
+
+POST http://localhost:4000/api/register
+content-type: application/json
+
+{
+  "username": "Theo" ,
+  "password": "theopass",
+  "email": "theo@email"
+}
+
+###
+
+POST http://localhost:4000/api/login
+content-type: application/json 
+
+{
+  "password": "theopass",
+  "email": "theo@email"
+}
 
