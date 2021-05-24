@@ -9,6 +9,12 @@ const router = express.Router()
 router.route('/activities')
   .get(activityController.index)
   .post(secureRoute, activityController.create)
+<<<<<<< HEAD
+=======
+
+router.route('/activities/search')
+  .get(activityController.search)
+>>>>>>> development
 
 router.route('/activities/:id')
   .get(activityController.show)
