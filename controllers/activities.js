@@ -1,16 +1,16 @@
-import activityData from '../db/data/activities.js'
+import activitiesData from '../db/data/activities.js'
 
 
 //request activities index
 function index(req, res) {
-  res.status(200).json(activityData)
+  res.status(200).json(activitiesData)
 }
 
 //request single activity
 function show(req, res) {
   const id = Number(req.params.id)
 
-  const activity = activityData.find((activity) => {
+  const activity = activitiesData.find((activity) => {
     return activity.number === id
   })
 
@@ -21,7 +21,7 @@ function show(req, res) {
 function create(req, res) {
   const newActivity = req.body
 
-  activityData.push(newActivity)
+  activitiesData.push(newActivity)
 
   res.status(201). json(newActivity)
 }
