@@ -83,7 +83,7 @@ async function remove(req, res, next) {
 async function update(req, res, next) {
   try {
     const currentUserid = req.currentUser._id
-    const activity = await activity.findById(req.params.id)
+    const activity = await Activities.findById(req.params.id)
 
     if (!activity) {
       throw new NotFound('No activity found.')
