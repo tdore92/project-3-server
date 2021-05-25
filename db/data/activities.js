@@ -2,7 +2,7 @@ export default [
   {
     number: 1,
     country: 'United Kingdom',
-    activity: 'Hike',
+    activityName: 'Hike',
     season: 'Summer',
     name: 'Mount Snowdon Hike',
     image_url: 'fake url',
@@ -11,7 +11,7 @@ export default [
   { 
     number: 2,
     country: 'France',
-    activity: 'Snow',
+    activityName: 'Snow',
     season: 'Winter',
     name: 'Grands Montets, Chamonix',
     image_url: 'fake url',
@@ -20,7 +20,7 @@ export default [
   {
     number: 3,
     country: 'Switzerland',
-    activity: 'Hike',
+    activityName: 'Hike',
     season: 'Summer',
     name: 'Gratweg Stoos',
     image_url: 'fake url',
@@ -29,7 +29,7 @@ export default [
   {
     number: 4,
     country: 'Switzerland',
-    activity: 'Snow',
+    activityName: 'Snow',
     season: 'Winter',
     name: 'Saint Gotthard Pass',
     image_url: 'fake url',
@@ -38,7 +38,7 @@ export default [
   {
     number: 5,
     country: 'Italy',
-    activity: 'Snow',
+    activityName: 'Snow',
     season: 'Winter',
     name: 'San Cassiano',
     image_url: 'fake url',
