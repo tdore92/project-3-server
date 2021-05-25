@@ -12,7 +12,7 @@ GET http://localhost:4000/api/activities/search?season=Summer
 
 POST http://localhost:4000/api/activities
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE4NzIyOTYsImV4cCI6MTYyMTkxNTQ5Nn0.56Ys3B0elIBcwv-SKpD156U19gf8gUVJJ2NRq--mg4I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 {
   "number": 6,
@@ -25,9 +25,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY
 }
 
 ### 
-PUT http://localhost:4000/api/activities/60abcb649fd39b37a173a316
+PUT http://localhost:4000/api/activities/60acba93ab60df43a38a24a0
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE4NzIyOTYsImV4cCI6MTYyMTkxNTQ5Nn0.56Ys3B0elIBcwv-SKpD156U19gf8gUVJJ2NRq--mg4I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 {
   "number": 1,
@@ -41,8 +41,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY
 
 ###
 
-DELETE http://localhost:4000/api/activities/60abcb649fd39b37a173a316
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE4NzIyOTYsImV4cCI6MTYyMTkxNTQ5Nn0.56Ys3B0elIBcwv-SKpD156U19gf8gUVJJ2NRq--mg4I
+DELETE http://localhost:4000/api/activities/60acba93ab60df43a38a24a0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 ###
 
@@ -52,10 +52,10 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-  "username": "Jack" ,
-  "password": "jackpass",
+  "username": "Nick" ,
+  "password": "nickpass",
   "passwordConfirmation": "jackpass",
-  "email": "jack@email"
+  "email": "nick@email"
 }
 
 ###
@@ -71,17 +71,17 @@ content-type: application/json
 ### 
 POST http://localhost:4000/api/activities/60abcdb446996138264c4a3c/comment
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE4NzIyOTYsImV4cCI6MTYyMTkxNTQ5Nn0.56Ys3B0elIBcwv-SKpD156U19gf8gUVJJ2NRq--mg4I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 {
-  "text": "comment 1."
+  "text": "comment 5."
 }
 
 ### 
-PUT http://localhost:4000/api/activities/60abcdb446996138264c4a3c/comment/60abcf04619f90385df76646
+PUT http://localhost:4000/api/activities/60abcdb446996138264c4a3c/comment/60acbac2ab60df43a38a24a1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE4NzIyOTYsImV4cCI6MTYyMTkxNTQ5Nn0.56Ys3B0elIBcwv-SKpD156U19gf8gUVJJ2NRq--mg4I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 {
-  "text": "Edit my comment."
+  "text": "Mountains suck."
 }
