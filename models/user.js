@@ -32,7 +32,6 @@ schema
 
 schema
   .pre('validate', function checkPassword(next) {
-  
     if (this.isModified('password') && (this.password !== this._passwordConfirmation)) {
     // validation error.. invalidate and say whats wrong
       this.invalidate('passwordConfirmation', 'should match password')

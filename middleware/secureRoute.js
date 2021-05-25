@@ -7,7 +7,7 @@ export default function secureRoute(req, res, next) {
   //check the token
   const rawToken = req.headers.authorization
   if (!rawToken || !rawToken.startsWith('Bearer')) {
-    return res.status(401).json({ message: 'Unauthorized' })
+    return res.status(401).json({ message: 'Unauthorized ' })
   }
   const token = rawToken.replace('Bearer ', '')
   console.log(token)

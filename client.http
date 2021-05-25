@@ -11,16 +11,17 @@ GET http://localhost:4000/api/activities/search?season=Summer
 ###
 
 POST http://localhost:4000/api/activities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 {
   "number": 6,
     "country": "fake country",
-    "activity": "fake activity",
+    "activityName": "fake activity",
     "season": "fake season",
     "name": "fake name",
-    "image_url": "fake url",
+    "imageUrl": "fake url",
     "description": "a test place"
 }
 
@@ -30,12 +31,12 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2RiNDQ2OTk2MTM4MjY0YzRhMzYiLCJpYXQiOjE2MjE5MzI1MjgsImV4cCI6MTYyMTk3NTcyOH0.JLns64QSHLwvHGGJj0ToG1abFyGukmPqYxid5mKLKws
 
 {
-  "number": 1,
-    "country": "fake country",
-    "activity": "fake activity",
+  "number": 6,
+    "country": "fake country 2",
+    "activityName": "fake activity",
     "season": "fake season",
     "name": "fake name",
-    "image_url": "fake url",
+    "imageUrl": "fake url",
     "description": "a test place"
 }
 
