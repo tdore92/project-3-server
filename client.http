@@ -62,18 +62,18 @@ POST http://localhost:4000/api/login
 content-type: application/json 
 
 {
-  "password": "randompass",
-  "email": "random@email"
+  "password": "theopass",
+  "email": "theo@email"
 }
 
 ###
 
-POST http://localhost:4000/api/activities/60abcd02fb0d4ff116673509/comment
+POST http://localhost:4000/api/activities/60acc3e4be151b0cd68ba14e/comment
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2QxN2ViZjYxY2YxMmNiZDEwZTkiLCJpYXQiOjE2MjE4NzE4OTcsImV4cCI6MTYyMTkxNTA5N30.lWLwN2Y7NonuYBBbOAkVPo4kzGNMKbvP8iqjx6bjIxQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjYzNlNGJlMTUxYjBjZDY4YmExNGMiLCJpYXQiOjE2MjE5MzUxMjQsImV4cCI6MTYyMTk3ODMyNH0.9af8tvgFN2Y0TgK8Htoa-pXOoxqm_4pttZSE7f0B2e0
 
 {
-  "text": "Comment number 2."
+  "text": "Comment number theo."
 }
 
 ###
