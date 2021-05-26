@@ -17,12 +17,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY
 
 {
   "number": 6,
-    "country": "fake country",
-    "activityName": "fake activity",
-    "season": "fake season",
-    "name": "fake name",
-    "imageUrl": "fake url",
-    "description": "a test place"
+  "country": "fake country",
+  "season": "fake season",
+  "activityName": "fake activity",
+  "imageUrl": "fake url",
+  "description": "a test place",
+  "categories": ["Hiking", "Walking"]
 }
 
 ### 
@@ -32,12 +32,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY
 
 {
   "number": 6,
-    "country": "fake country 2",
-    "activityName": "fake activity",
-    "season": "fake season",
-    "name": "fake name",
-    "imageUrl": "fake url",
-    "description": "a test place"
+  "country": "fake country",
+  "season": "fake season",
+  "activityName": "fake activity",
+  "imageUrl": "fake url",
+  "description": "a test place",
+  "categories": ["Hiking", "Walking"]
 }
 
 ###

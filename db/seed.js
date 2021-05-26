@@ -31,15 +31,10 @@ async function seedDatabase() {
       text: 'This is my first comment',
       user: users[0]._id,
     }
-<<<<<<< HEAD
-    const activityToCommentOn = activities[0]
-    activityToCommentOn.comments.push(myComment)
-=======
 
     const activityToCommentOn = activities[0]
     activityToCommentOn.comments.push(myComment)
 
->>>>>>> development
     const savedActivity = await activityToCommentOn.save()
     console.log(savedActivity)
 
