@@ -1,11 +1,11 @@
 import mongoose from 'mongoose'
 import connectToDb from './connectToDb.js'
 
-import Activities from '../models/activities.js'
-import activitiesData from './data/activities.js'
-
 import User from '../models/user.js'
 import userData from './data/user.js'
+
+import Activities from '../models/activities.js'
+import activitiesData from './data/activities.js'
 
 async function seedDatabase() {
   try {

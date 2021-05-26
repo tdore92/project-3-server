@@ -1,7 +1,8 @@
 GET http://localhost:4000/api/activities
 
 ###
-GET http://localhost:4000/api/activities/
+GET http://localhost:4000/api/activities/60ae187c4520436f1e3691c4
+
 
 ###
 
@@ -10,38 +11,40 @@ GET http://localhost:4000/api/activities/search?season=Summer
 ###
 
 POST http://localhost:4000/api/activities
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
 content-type: application/json
+
 
 {
   "number": 6,
-    "country": "fake country",
-    "activity": "fake activity",
-    "season": "fake season",
-    "name": "fake name",
-    "image_url": "fake url",
-    "description": "a test place"
+  "country": "fake country",
+  "season": "fake season",
+  "activityName": "fake activity",
+  "imageUrl": "fake url",
+  "description": "a test place",
+  "categories": ["Hiking", "Walking"]
 }
 
 ### 
-PUT http://localhost:4000/api/activities/60abcb461dc858f0811590a7
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
+PUT http://localhost:4000/api/activities/60ae199cf3ef396f303a7a31
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
 
 {
   "number": 6,
-    "country": "fake country 2",
-    "activity": "fake activity",
-    "season": "fake season",
-    "name": "fake name",
-    "image_url": "fake url",
-    "description": "a test place"
+  "country": "fake country",
+  "season": "fake season",
+  "activityName": "fake activity",
+  "imageUrl": "fake url",
+  "description": "a test place",
+  "categories": ["Hiking", "Walking"]
 }
 
 ###
 
-DELETE http://localhost:4000/api/activities/60abcb461dc858f0811590a7
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiYzYzMDQwYmY2NGVlZjhjM2M3NDciLCJpYXQiOjE2MjE4NzAxNTgsImV4cCI6MTYyMTkxMzM1OH0.GfSKXxwIH4NH6iMejV0B3URH5177TJwzO8ij_eTSJP4
+DELETE http://localhost:4000/api/activities/60ae199cf3ef396f303a7a31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
+
 ###
 
 //USERS
@@ -50,10 +53,10 @@ POST http://localhost:4000/api/register
 content-type: application/json
 
 {
-  "username": "random1" ,
-  "password": "randompass1",
-  "passwordConfirmation": "randompass1",
-  "email": "random@email1"
+  "username": "Nick" ,
+  "password": "nickpass",
+  "passwordConfirmation": "jackpass",
+  "email": "nick@email"
 }
 
 ###
@@ -66,22 +69,20 @@ content-type: application/json
   "email": "theo@email"
 }
 
-###
-
-POST http://localhost:4000/api/activities/60acc3e4be151b0cd68ba14e/comment
+### 
+POST http://localhost:4000/api/activities/60ae187c4520436f1e3691c4/comment
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFjYzNlNGJlMTUxYjBjZDY4YmExNGMiLCJpYXQiOjE2MjE5MzUxMjQsImV4cCI6MTYyMTk3ODMyNH0.9af8tvgFN2Y0TgK8Htoa-pXOoxqm_4pttZSE7f0B2e0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
 
 {
-  "text": "Comment number theo."
+  "text": "Aint no Mountain high enough."
 }
 
-###
-
-PUT http://localhost:4000/api/activities/60abcd02fb0d4ff116673509/comment/60abcdbbebf61cf12cbd10eb
+### 
+PUT http://localhost:4000/api/activities/60ae187c4520436f1e3691c4/comment/60ae1a3ff3ef396f303a7a34
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFiY2QxN2ViZjYxY2YxMmNiZDEwZTkiLCJpYXQiOjE2MjE4NzE4OTcsImV4cCI6MTYyMTkxNTA5N30.lWLwN2Y7NonuYBBbOAkVPo4kzGNMKbvP8iqjx6bjIxQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
 
 {
-  "text": "Second edit comment number 3."
+  "text": "Mountains suck."
 }

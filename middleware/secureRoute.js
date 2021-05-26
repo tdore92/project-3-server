@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken'
 import User from '../models/user.js'
 import { secret } from '../config/environment.js'
 
-export default function secureRoute(req, res, next){
+export default function secureRoute(req, res, next) {
 
   //check the token
   const rawToken = req.headers.authorization
