@@ -16,13 +16,12 @@ content-type: application/json
 
 
 {
-  "number": 6,
   "country": "fake country",
-  "season": "fake season",
   "activityName": "fake activity",
-  "imageUrl": "fake url",
   "description": "a test place",
-  "categories": ["Hiking", "Walking"]
+  "season": "fake season",
+  "categories": ["Hiking", "Walking"],
+  "imageUrl": "fake url",
 }
 
 ### 
@@ -31,13 +30,12 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
 
 {
-  "number": 6,
   "country": "fake country",
-  "season": "fake season",
   "activityName": "fake activity",
-  "imageUrl": "fake url",
   "description": "a test place",
-  "categories": ["Hiking", "Walking"]
+  "season": "fake season",
+  "categories": ["Hiking", "Walking"],
+  "imageUrl": "fake url",
 }
 
 ###
