@@ -1,7 +1,7 @@
 GET http://localhost:4000/api/activities
 
 ###
-GET http://localhost:4000/api/activities/60ae187c4520436f1e3691c4
+GET http://localhost:4000/api/activities/60b0e24003abe804c5fba02a
 
 
 ###
@@ -11,7 +11,7 @@ GET http://localhost:4000/api/activities/search?season=Summer
 ###
 
 POST http://localhost:4000/api/activities
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGIwZTIzZjAzYWJlODA0YzVmYmEwMjgiLCJpYXQiOjE2MjIyMDgwMzksImV4cCI6MTYyMjI1MTIzOX0.AMcxVztsRl8WlEbGsBkLn8-foOL1SuAUZAZQzeJzg3s
 content-type: application/json
 
 
@@ -21,21 +21,21 @@ content-type: application/json
   "description": "a test place",
   "season": "fake season",
   "categories": ["Hiking", "Walking"],
-  "imageUrl": "fake url",
+  "imageUrl": "fake url"
 }
 
 ### 
 PUT http://localhost:4000/api/activities/60ae199cf3ef396f303a7a31
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGFlMTg3YjQ1MjA0MzZmMWUzNjkxYmUiLCJpYXQiOjE2MjIwMjIzNTAsImV4cCI6MTYyMjA2NTU1MH0.QwS3xl311uizZiriZ3gB2302pbtVAZL5Ne4jjgQAB6A
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MGIwZTIzZjAzYWJlODA0YzVmYmEwMjgiLCJpYXQiOjE2MjIyMDgwMzksImV4cCI6MTYyMjI1MTIzOX0.AMcxVztsRl8WlEbGsBkLn8-foOL1SuAUZAZQzeJzg3s
 
 {
-  "country": "fake country",
+  "country": "fake country AGAIN",
   "activityName": "fake activity",
   "description": "a test place",
   "season": "fake season",
   "categories": ["Hiking", "Walking"],
-  "imageUrl": "fake url",
+  "imageUrl": "fake url"
 }
 
 ###
@@ -54,7 +54,7 @@ content-type: application/json
   "username": "Nick" ,
   "password": "nickpass",
   "passwordConfirmation": "jackpass",
-  "email": "nick@email"
+  "email": "nick@email",
 }
 
 ###
@@ -64,7 +64,7 @@ content-type: application/json
 
 {
   "password": "theopass",
-  "email": "theo@email"
+  "email": "theo@email",
 }
 
 ### 
