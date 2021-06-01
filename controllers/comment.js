@@ -4,19 +4,20 @@ import { NotFound } from '../lib/errors.js'
 
 async function create(req, res, next) {
   req.body.user = req.currentUser
+  console.log(req.body)
   try {
     const activity = await Activity.findById(req.params.id)
       .populate('user')
       .populate('comments.user')
-
+    
     if (!activity) {
       throw new NotFound('No activity found.')
     }
     activity.comments.push(req.body)
-
+    console.log(activity)
     const savedActivity = await activity.save()
     res.send(savedActivity)
-  } catch (e) {
+  } catch (e) { 
     next(e)
   }
 }
