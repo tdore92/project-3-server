@@ -172,9 +172,6 @@ function Comments() {
                   </div>
 ```
 
-
-<img src="" alt="MontVenture Page">
-
 <h2>Wins</h2>
 
 <p>Team coordination: As a team we had a strong collaborative workflow going on. We efficiently spread out our workflow so the initial building of the backend and base front end only took three days. Once we settled into individually dealing with more complex issues our pace slowed down, but it was an effective method to give us extra time to work on the them.</p>
