@@ -1,4 +1,3 @@
-theo has made a change
 # Project-3
 
 <h2>Overview</h2>
@@ -34,7 +33,7 @@ theo has made a change
 
 <h3>Approach Taken</h3>
 
-<p>After a period of brainstorming we sat down to pseudo-code our idea, outlined the components we'd need for the front end and the models we wanted for our backend. In this case, it would be 'activities' and 'user' models.</p>
+<p>After a period of brainstorming Raph, Drew and I sat down to pseudo-code our idea, outlined the components we'd need for the front end and the models we wanted for our backend. In this case, it would be 'activities' and 'user' models.</p>
 
 <img src="https://i.imgur.com/KBIIwl4.png" alt="MontVenture Pseudo"/>
 
@@ -42,7 +41,7 @@ theo has made a change
 
 <h3>Backend</h3>
 
-<p>Using Mongoose as our ORM, we created our basic activities schema, including a ‘season’ field which would be used to filter the schema depends on the page the user redirects to. Once the schema was complete we created the CRUD controllers and tested each of our endpoints. The basic functionalities in place,  we then added an embedded comments schema and the extra RESTful routes for CRUD actions on the frontend SHOW pages.</p>
+<p>Using Mongoose as our ORM, I created our basic activities schema, including a ‘season’ field which would be used to filter the schema depends on the page the user redirects to. Once the schema was complete I created the CRUD controllers and tested each of our endpoints. The basic functionalities in place, I then added an embedded comments schema and the extra RESTful routes for CRUD actions on the frontend SHOW pages.</p>
 
 ```
 const activitySchema = new mongoose.Schema({
@@ -104,7 +103,7 @@ schema
 
 <h3>Frontend</h3>
 
-<p>We created a 'Summer' and 'Winter' page, and within each component filtered the desired results using the 'season' object field.</p>
+<p>I created a 'Summer' and 'Winter' page, and within each component filtered the desired results using the 'season' object field.</p>
 
 ```
 const summerFilteredActivities = activities?.filter((activity) => {
