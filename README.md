@@ -2,7 +2,7 @@
 
 <h2>Overview</h2>
 
-<p>Our third GA project was the most complex thus far- as a trio, build and deploy a full stack MERN app. Taking the name ‘Async or Swim’ we decided to create MontVenture, an adventure based app that would allow users to search for mountain based activities in their chosen town or city. The activities would be divided into two main subgroups- Summer and Winter- and registered users could create their own ‘activity posts’, as well as leave comments on a desired activity.</p>
+<p>For our third GA project we were tasked with building and deploying a full stack MERN app. Taking the name ‘Async or Swim’ my team and I decided to create MontVenture, an adventure based app that would allow users to search for mountain based activities in their chosen town or city. The activities would be divided into two Summer and Winter subgroups, and registered users could create their own ‘activity posts’, as well as leave comments on a desired activity.</p>
 
 <a href="">Visit MontVenture here.</a>
 
@@ -158,7 +158,7 @@ function Comments() {
   }
 ```
 
-<p>I then imported the now complete Comments component into ActivityShow. Initially only the loading state would render- after much debugging, it was found to be a syntax error within the backend.</p>
+<p>I then imported the now complete Comments component into ActivityShow. Initially only the loading state would render, and after much debugging it was found to be a syntax error within the backend.</p>
 
 ```
 <div className="column is-half">
@@ -175,11 +175,11 @@ function Comments() {
 
 <img src="" alt="MontVenture Page">
 
-<h3>Wins</h3>
+<h2>Wins</h2>
 
 <p>Team coordination: As a team we had a strong collaborative workflow going on. We efficiently spread out our workflow so the initial building of the backend and base front end only took three days. Once we settled into individually dealing with more complex issues our pace slowed down, but it was an effective method to give us extra time to work on the them.</p>
 
-<h3>Challenges</h3>
+<h2>Challenges</h2>
 
 <p>Finally getting the comments section functioning took me a day or two, along with the TA's help to deduce the issues were coming from the backend. The time consuming nature of these issues was very apparent!</p>
 
@@ -191,4 +191,4 @@ function Comments() {
 
 <h2>Lessons Learned</h2>
 
-<p>Working on a full-stack project with a looming deadline was good for prioritisation and efficency- each day, we set out what each member had to accomplish, and allowed us to build a full-stack app without being overwhelmed by the amount of features we wanted to include.</p>
+<p>Working on a full-stack project with a looming deadline was good for prioritisation and efficency. Each day, we set out what each member had to accomplish, and allowed us to build a full-stack app without being overwhelmed by the amount of features we wanted to include.</p>
