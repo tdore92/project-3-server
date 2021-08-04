@@ -1,10 +1,9 @@
 import express from 'express'
 import cors from 'cors'
-
-
 import logger from './middleware/logger.js'
 import router from './views/router.js'
 import errorHandler from './middleware/errorHandler.js'
+
 
 const app = express()
 
