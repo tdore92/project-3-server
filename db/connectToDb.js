@@ -9,5 +9,7 @@ export default function connectToDb() {
     useFindAndModify: false,
   }
 
+  console.log(dbURL)
+
   return mongoose.connect(dbURL, options)
 }
